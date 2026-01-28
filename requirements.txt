@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain-core
+langchain-chroma
+langchain-ollama
+chromadb
+rank_bm25
+duckduckgo-search
+pyyaml
+python-dotenv
+rich
+tqdm
+click
+ddgs

@@ -1,0 +1,14 @@
+system:
+  llm_model: "granite4:7b-a1b-h"       # Ensure you run `ollama pull llama3`
+  embed_model: "nomic-embed-text" # Ensure you run `ollama pull nomic-embed-text`
+  chunk_size: 1000
+  chunk_overlap: 200
+
+retrieval:
+  strategy: "hybrid"        # Options: simple, hybrid, hyde, multi_query
+  top_k: 5
+  web_fallback: true        # Trigger DuckDuckGo if local docs are sparse
+  link_depth: 1             # (Stub) Depth of wikilink traversal
+
+features:
+  use_crag: true           # Corrective RAG
