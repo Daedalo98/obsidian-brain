@@ -84,23 +84,23 @@ OLLAMA_BASE_URL="http://localhost:11434"
 1. Build the Brain (Indexing)
 
 Run this whenever you add new notes. It's fast because it skips unchanged files.
-Bash
-
+```Bash
 python main.py index
+```
 
 2. Chat with your Notes
 
 The default mode uses Hybrid Search.
-Bash
-
+```Bash
 python main.py ask "What are my notes on Docker?"
+```
 
 3. Advanced Strategies
 
 HyDE Strategy: Best for complex concepts or "how-to" questions.
-Bash
-
+```Bash
 python main.py ask "How do I optimize a database?" --strategy hyde
+```
 
 ⚙️ Configuration (config.yaml)
 
@@ -115,4 +115,10 @@ retrieval:
   top_k: 5               # Number of notes to retrieve
   web_fallback: true     # Enable DuckDuckGo search
   strategy: "hybrid"     # Default strategy
+```
+
+### Graphical Interface (GUI)
+Run the Streamlit app for a visual experience:
+```bash
+streamlit run gui.py
 ```

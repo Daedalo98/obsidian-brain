@@ -12,3 +12,4 @@ rich
 tqdm
 click
 ddgs
+streamlit
